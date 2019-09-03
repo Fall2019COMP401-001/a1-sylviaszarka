@@ -33,7 +33,7 @@ public class A1Novice {
 				double cost = scan.nextDouble();
 				customerTotals[i] += amount*cost;
 			}
-			System.out.println(customerFirst[i].charAt(0) + "." + " " + customerSecond[i] + ":" + customerTotals[i]);
+			System.out.println(customerFirst[i].charAt(0) + "." + " " + customerSecond[i] + ":" + " " + String.format("%.2f",customerTotals[i]));
 
 		}
 		scan.close();
