@@ -26,7 +26,6 @@ public class A1Novice {
 			customerFirst[i] = scan.next();
 			customerSecond[i] = scan.next();		
 			customerItemsNum[i] = scan.nextInt();
-			System.out.println(customerFirst[i].charAt(0) + "." + " " + customerSecond[i] + " " + customerItemsNum[i]);
 				
 			for(int j=0; j < customerItemsNum[i]; j++) {
 				int amount = scan.nextInt();
@@ -34,7 +33,8 @@ public class A1Novice {
 				double cost = scan.nextDouble();
 				customerTotals[i] += amount*cost;
 			}
-			System.out.println(customerTotals[i]);
+			System.out.println(customerFirst[i].charAt(0) + "." + " " + customerSecond[i] + ":" + customerTotals[i]);
+
 		}
 		scan.close();
 		}
