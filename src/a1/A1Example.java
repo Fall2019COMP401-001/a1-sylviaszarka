@@ -13,10 +13,14 @@ public class A1Example {
 		
 		// Set up scanner object to read space-separated values
 		// from console input
-		
+		// new object being created
+		// type: scanner object
+		// local variable name: scan
+		// allows us to read input from consol input as diff. kinds of data
 		Scanner scan = new Scanner(System.in);
 
 		// Read in count of numbers to process
+		// return value will b integer
 		
 		int count = scan.nextInt();
 		

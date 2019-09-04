@@ -30,7 +30,7 @@ public class A1Adept {
 		double total = 0.0;
 		for(int j=0; j<cust_amt;j++) {
 			String customername = scan.next();
-			customername+="";
+			customername+=" ";
 			customername+=scan.next();
 			names[j] = customername;
 			int types = scan.nextInt();
@@ -46,8 +46,8 @@ public class A1Adept {
 		int min = findValueMin(totalsum);
 		int max = findValueMax(totalsum);
 		double avg = total/cust_amt;
-		System.out.println("Biggest: "+ names[max]+" ("+ String.format("%.2f",totalsum[max]) +")");
-		System.out.println("Smallest: "+ names[min]+" ("+ String.format("%.2f",totalsum[min]) +")");
+		System.out.println("Biggest: "+ names[max]+" ("+String.format("%.2f",totalsum[max]) +")");
+		System.out.println("Smallest: "+ names[min]+" ("+String.format("%.2f",totalsum[min]) +")");
 		System.out.println("Average: "+ String.format("%.2f", avg));	
 }
 	static int findValueMin(double[] vals) {
